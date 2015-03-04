@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/main.css"/>
+    <link rel="stylesheet" href="main.css"/>
 </head>
 <body data-page="pages/main/main">
 <div id="page">
@@ -48,13 +48,13 @@
                 <dd>
                     <div class="card">
                         <div class="photo">
-                            <div class="img"><img src="/img/photo1.jpg" alt="#"/></div>
+                            <div class="img"><img src="img/photo1.jpg" alt="#"/></div>
                             <ul class="previews">
-                                <li><a href="/img/photo1.jpg" class="active"><img src="/img/preview1.jpg"
+                                <li><a href="img/photo1.jpg" class="active"><img src="img/preview1.jpg"
                                                                                  alt="Общий вид"/></a></li>
-                                <li><a href="/img/photo2.jpg"><img src="/img/preview2.jpg" alt="Вид слева"/></a></li>
-                                <li><a href="/img/photo3.jpg"><img src="/img/preview3.jpg" alt="Вид справа"/></a></li>
-                                <li><a href="/img/photo1.jpg"><img src="/img/preview1.jpg" alt="Вид сверху"/></a></li>
+                                <li><a href="img/photo2.jpg"><img src="img/preview2.jpg" alt="Вид слева"/></a></li>
+                                <li><a href="img/photo3.jpg"><img src="img/preview3.jpg" alt="Вид справа"/></a></li>
+                                <li><a href="img/photo1.jpg"><img src="img/preview1.jpg" alt="Вид сверху"/></a></li>
                             </ul>
                         </div>
                         <p>
@@ -393,12 +393,11 @@
     <a class="logo"></a>
 </div>
 
-<script src="/bower_components/requirejs/require.js"></script>
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/requirejs/require.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 
 <script>
     require({
-        baseUrl: '/',
         map: {
             "*": {
                 underscore: 'bower_components/lodash/lodash'
