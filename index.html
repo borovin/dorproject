@@ -6,23 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="/main.css"/>
 </head>
-<body>
-<div id="content">
+<body data-page="pages/main/main">
+<div id="page">
     <div id="header">
-        <h1 class="flash">Заголовок страницы</h1>
+        <h1>Заголовок страницы</h1>
 
-        <h2 class="flash">Название раздела</h2>
+        <h2>Название раздела</h2>
 
         <div class="description">
             Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant netus malesuada
             ante. morbi Pellentesque Donec est. amet tristique fames Vestibulum vitae quam et leo. ultricies Mauris sit
             ultricies eleifend semper. mi egestas. senectus placerat libero eu
         </div>
-        <div class="map">
-            <div class="minimap fon">
+        <div class="map" block="minimap">
+            <div class="minimap fon minimap__background">
                 <strong></strong>
             </div>
             <div class="circle">
@@ -36,8 +35,8 @@
             </div>
         </div>
         <div class="lang">
-            <strong class="rus">РУС<span></span></strong>
-            <a href="#" class="eng">ENG<span></span></a>
+            <a href="#" class="lang__link lang__link_active">РУС</a>
+            <a href="#" class="lang__link">ENG</a>
         </div>
     </div>
     <div id="main">
@@ -49,13 +48,13 @@
                 <dd>
                     <div class="card">
                         <div class="photo">
-                            <div class="img"><img src="img/photo1.jpg" alt="#"/></div>
+                            <div class="img"><img src="/img/photo1.jpg" alt="#"/></div>
                             <ul class="previews">
-                                <li><a href="img/photo1.jpg" class="active"><img src="img/preview1.jpg"
+                                <li><a href="/img/photo1.jpg" class="active"><img src="/img/preview1.jpg"
                                                                                  alt="Общий вид"/></a></li>
-                                <li><a href="img/photo2.jpg"><img src="img/preview2.jpg" alt="Вид слева"/></a></li>
-                                <li><a href="img/photo3.jpg"><img src="img/preview3.jpg" alt="Вид справа"/></a></li>
-                                <li><a href="img/photo1.jpg"><img src="img/preview1.jpg" alt="Вид сверху"/></a></li>
+                                <li><a href="/img/photo2.jpg"><img src="/img/preview2.jpg" alt="Вид слева"/></a></li>
+                                <li><a href="/img/photo3.jpg"><img src="/img/preview3.jpg" alt="Вид справа"/></a></li>
+                                <li><a href="/img/photo1.jpg"><img src="/img/preview1.jpg" alt="Вид сверху"/></a></li>
                             </ul>
                         </div>
                         <p>
@@ -393,5 +392,20 @@
     </ul>
     <a class="logo"></a>
 </div>
+
+<script src="/bower_components/requirejs/require.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+<script>
+    require({
+        baseUrl: '/',
+        map: {
+            "*": {
+                underscore: 'bower_components/lodash/lodash'
+            }
+        }
+    }, ['main']);
+</script>
+
 </body>
 </html>
