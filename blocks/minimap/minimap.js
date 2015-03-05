@@ -11,7 +11,7 @@ define(function (require) {
                     offsetY = e.pageY - e.currentTarget.offsetTop;
 
                 block.background.style.left = -offsetX + "px";
-                block.background.style.top = -0.4*offsetY + 20 + "px";
+                block.background.style.top = -0.5*offsetY + 20 + "px";
             }
         },
         render: function(){

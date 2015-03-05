@@ -1,3 +1,91 @@
+.minimap {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: none;
+    overflow: hidden;
+    right: 160px;
+    top: 0;
+}
+
+.minimap__circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(circle.png) 0 0 no-repeat;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
 .minimap__background {
     /*transition: left 0.5s, top 0.5s;*/
+    background-image: url("minimap.jpg");
+    width: 700px;
+    height: 528px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.minimap__link {
+    position: absolute;
+    height: 26px;
+    line-height: 25px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 0 4px #333;
+}
+
+.minimap__link::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 14px;
+    height: 14px;
+    border: 4px solid #fff;
+    box-shadow: 0 0 4px #333;
+    border-radius: 100%;
+    left: -22px;
+    top: -22px;
+}
+
+.minimap__link:hover::before {
+    background-color: #466951;
+}
+
+.minimap__link::after {
+    content: "";
+    width: 3px;
+    height: 10px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -2px;
+    top: -5px;
+}
+
+.minimap__link_news {
+    top: 250px;
+    left: 400px;
+}
+
+.minimap__link_about {
+    top: 130px;
+    left: 360px;
+}
+
+.minimap__link_services {
+    top: 150px;
+    left: 210px;
+}
+
+.minimap__link_contacts {
+    top: 310px;
+    left: 240px;
+}
+
+.minimap__link_projects {
+    top: 220px;
+    left: 270px;
 }
