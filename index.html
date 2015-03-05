@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="main.css"/>
 </head>
 <body data-page="pages/main/main">
-<div id="page">
-    <div id="header">
+<div id="page" class="page">
+    <div class="page__header">
         <h1>Заголовок страницы</h1>
 
         <h2>Название раздела</h2>
 
-        <div class="description">
+        <div class="page__description">
             Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant netus malesuada
             ante. morbi Pellentesque Donec est. amet tristique fames Vestibulum vitae quam et leo. ultricies Mauris sit
             ultricies eleifend semper. mi egestas. senectus placerat libero eu
@@ -365,30 +365,17 @@
             </dl>
         </div>
     </div>
+    <div class="page__footer">
+        <a class="page__footerLink" href="#">О компании</a>
+        <a class="page__footerLink" href="#">Новости</a>
+        <a class="page__footerLink" href="#">Услуги</a>
+        <a class="page__footerLink" href="#">Проекты</a>
+        <a class="page__footerLink" href="#">Вакансии</a>
+        <a class="page__footerLink" href="#">Контактная информация</a>
+        <a class="page__logo" href="#"></a>
+    </div>
 </div>
-<div id="footer">
-    <ul>
-        <li class="about">
-            <a href="#">О КОМПАНИИ<span></span></a>
-        </li>
-        <li class="news">
-            <a href="#">НОВОСТИ<span></span></a>
-        </li>
-        <li class="services">
-            <a href="#">УСЛУГИ<span></span></a>
-        </li>
-        <li class="projects">
-            <a href="#">ПРОЕКТЫ<span></span></a>
-        </li>
-        <li class="jobs">
-            <a href="#">ВАКАНСИИ<span></span></a>
-        </li>
-        <li class="contacts">
-            <a href="#">КОНТАКТНАЯ ИНФОРМАЦИЯ<span></span></a>
-        </li>
-    </ul>
-    <a class="logo"></a>
-</div>
+
 
 <script src="bower_components/requirejs/require.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>

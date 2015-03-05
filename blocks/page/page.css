@@ -1,3 +1,65 @@
 .page {
 
 }
+
+.page__header {
+    position: relative;
+    padding: 55px 0 30px;
+}
+
+.page__description {
+    background-color: #D2E0CF;
+    border-top: 6px solid #E8EFE4;
+    color: #466951;
+    font-size: 17px;
+    padding: 20px 550px 20px 65px;
+    min-height: 100px;
+}
+
+.page h1,
+.page h2 {
+    padding-left: 65px;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.page h1 {
+    height: 88px;
+    color: #466951;
+}
+
+.page h2 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f3f7f0;
+}
+
+.page__footer {
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    line-height: 70px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    min-width: 1000px;
+    box-sizing: border-box;
+    padding: 0 0 0 65px;
+}
+
+.page__footerLink {
+    color: #fff;
+    font-family: kelson;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.page__logo {
+    width: 241px;
+    height: 45px;
+    display: block;
+    background: url(logo.jpg) 0 0 no-repeat;
+    float: right;
+    position: relative;
+    top: 12px;
+    right: 40px;
+}
