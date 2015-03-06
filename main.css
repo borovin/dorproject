@@ -1,10 +1,12 @@
 @import "kit/fonts/kelson/kelson.css";
-
 @import "blocks/page/page.css";
 @import "blocks/footer/footer.css";
 @import "blocks/lang/lang.css";
 @import "blocks/minimap/minimap.css";
 @import "blocks/minimap/minimap.css";
+@import "blocks/serviceList/serviceList.css";
+@import "blocks/newsList/newsList.css";
+@import "blocks/contacts/contacts.css";
 
 /*
  общие правила
@@ -56,16 +58,8 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
-    padding: 5px 0;
-}
-
-h5 {
-    font-size: 11px;
-}
-
-h6 {
-    font-size: 10px;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 ul {
@@ -302,14 +296,6 @@ div.links a.contacts {
 }
 
 /* основной контент */
-div#page {
-    overflow: hidden;
-    min-height: 100%;
-    position: relative;
-    -height: 100%;
-    -overflow: visible;
-}
-
 div#main {
     padding: 35px 0 150px 65px;
     overflow: hidden;

@@ -11,9 +11,9 @@
 <body data-page="pages/main/main">
 <div id="page" class="page">
     <div class="page__header">
-        <h1>Заголовок страницы</h1>
+        <h1>Page header</h1>
 
-        <h2>Название раздела</h2>
+        <h2>Article header</h2>
 
         <div class="page__description">
             Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant netus malesuada
@@ -22,356 +22,182 @@
         </div>
         <div class="minimap" block="minimap">
             <div class="minimap__background">
-                <a href="#" class="minimap__link minimap__link_news">Новости</a>
-                <a href="#" class="minimap__link minimap__link_about">О компании</a>
-                <a href="#" class="minimap__link minimap__link_services">Услуги</a>
-                <a href="#" class="minimap__link minimap__link_projects">Проекты</a>
-                <a href="#" class="minimap__link minimap__link_contacts">Контактная информация</a>
+                <a href="#" class="minimap__link minimap__link_news">News</a>
+                <a href="#" class="minimap__link minimap__link_about">About us</a>
+                <a href="#" class="minimap__link minimap__link_services">Services</a>
+                <a href="#" class="minimap__link minimap__link_projects">Projects</a>
+                <a href="#" class="minimap__link minimap__link_contacts">Contacts</a>
             </div>
             <div class="minimap__circle">
             </div>
         </div>
         <div class="lang">
-            <a href="#" class="lang__link lang__link_active">РУС</a>
-            <a href="#" class="lang__link">ENG</a>
+            <a href="#" class="lang__link">РУС</a>
+            <a href="#" class="lang__link lang__link_active">ENG</a>
         </div>
     </div>
-    <div id="main">
-        <div id="left">
-            <dl class="services scroll">
-                <dt>
-                    <span>Pellentesque et habitant egestas. turpis netus tristique malesuada morbi senectus fames et ac</span>
-                </dt>
-                <dd>
-                    <div class="card">
-                        <div class="photo">
-                            <div class="img"><img src="img/photo1.jpg" alt="#"/></div>
-                            <ul class="previews">
-                                <li><a href="img/photo1.jpg" class="active"><img src="img/preview1.jpg"
-                                                                                 alt="Общий вид"/></a></li>
-                                <li><a href="img/photo2.jpg"><img src="img/preview2.jpg" alt="Вид слева"/></a></li>
-                                <li><a href="img/photo3.jpg"><img src="img/preview3.jpg" alt="Вид справа"/></a></li>
-                                <li><a href="img/photo1.jpg"><img src="img/preview1.jpg" alt="Вид сверху"/></a></li>
-                            </ul>
-                        </div>
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                            egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
-                            eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat
-                            eleifend leo.
-                        </p>
+    <div class="page__content">
+        <div class="page__col page__col_1">
+            <h3>Services</h3>
 
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                            egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
-                            eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat
-                            eleifend leo.
-                        </p>
-                        <a href="#" class="more">подробнее...</a>
-                    </div>
-                </dd>
-                <dt>
-                    <span>Ut enim ad minim veniam</span>
-                </dt>
-                <dd>
-                    <div class="card">
-                        <ul>
-                            <li>
-                                Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a,
-                                ultricies in, diam. Sed arcu. Cras consequat.
-                            </li>
-                            <li>
-                                Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
-                                magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
-                                porttitor, facilisis luctus, metus.
-                            </li>
-                            <li>
-                                Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
-                                vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit
-                                amet, nisi.
-                            </li>
-                            <li>
-                                Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut,
-                                elementum vulputate, nunc.
-                            </li>
-                        </ul>
-                    </div>
-                </dd>
-                <dt>
-                    <span>Aliquam tincidunt mauris eu risus. Pellentesque et habitant egestas. turpis netus tristique malesuada morbi senectus fames et ac</span>
-                </dt>
-                <dd>
-                    <div class="card">
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                            egestas.
-                        </p>
+            <div class="serviceList">
 
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                            egestas.
-                        </p>
-                        <a href="#" class="more">подробнее...</a>
-                    </div>
-                </dd>
-                <dt>
-                    <span>Pellentesque et habitant egestas. turpis netus tristique malesuada morbi senectus fames et ac</span>
-                </dt>
-                <dd>
-                    <div class="card">
-                        <p>
-                            Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant
-                            netus malesuada ante. morbi Pellentesque Donec est. amet tristique fames Vestibulum vitae
-                            quam et leo. ultricies Mauris sit ultricies eleifend semper. mi egestas. senectus placerat
-                            libero eu
-                        </p>
-                        <ul>
-                            <li>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            </li>
-                            <li>
-                                Aliquam tincidunt mauris eu risus.
-                            </li>
-                            <li>
-                                Vestibulum auctor dapibus neque.
-                            </li>
-                        </ul>
-                        <p>
-                            Pellentesque et habitant egestas. turpis netus tristique malesuada morbi senectus fames et
-                            ac
-                        </p>
-                        <a href="#" class="more">подробнее...</a>
-                    </div>
-                </dd>
-                <dt>
-                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
-                </dt>
-                <dd>
-                    <div class="card">
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                            egestas.
-                        </p>
+                <div class="serviceList__item">
 
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                            egestas.
-                        </p>
-                        <a href="#" class="more">подробнее...</a>
-                    </div>
-                </dd>
-                <dt>
-                    <span>Vestibulum auctor dapibus neque.</span>
-                </dt>
-                <dd>
-                    <div class="card">
-                        <p>
-                            Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant
-                            netus malesuada ante. morbi Pellentesque Donec est. amet tristique fames Vestibulum vitae
-                            quam et leo. ultricies Mauris sit ultricies eleifend semper. mi egestas. senectus placerat
-                            libero eu
-                        </p>
-                        <a href="#" class="more">подробнее...</a>
-                    </div>
-                </dd>
-                <dt>
-                    <span>Pellentesque et habitant egestas. turpis netus tristique malesuada morbi senectus fames et ac Pellentesque et habitant egestas. turpis netus tristique malesuada morbi senectus fames et ac</span>
-                </dt>
-                <dd>
-                    <div class="card">
-                        <p>
-                            Pellentesque et habitant egestas. turpis netus tristique malesuada morbi senectus fames et
-                            ac
-                        </p>
-                        <ul>
-                            <li>
-                                Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a,
-                                ultricies in, diam. Sed arcu. Cras consequat.
-                            </li>
-                            <li>
-                                Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
-                                magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
-                                porttitor, facilisis luctus, metus.
-                            </li>
-                            <li>
-                                Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
-                                vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit
-                                amet, nisi.
-                            </li>
-                            <li>
-                                Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut,
-                                elementum vulputate, nunc.
-                            </li>
-                        </ul>
-                        <a href="#" class="more">подробнее...</a>
-                    </div>
-                </dd>
-                <dt>
-                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
-                </dt>
-                <dd>
-                    <div class="card">
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                            egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
-                            eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat
-                            eleifend leo.
-                        </p>
+                    <h4 class="serviceList__title">Service 1</h4>
 
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                            egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
-                            eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat
-                            eleifend leo.
-                        </p>
-                        <a href="#" class="more">подробнее...</a>
+                    <div class="serviceList__text">
+                        Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant netus malesuada
+                        ante. morbi Pellentesque Donec est. amet tristique fames Vestibulum vitae quam et leo. ultricies Mauris sit
+                        ultricies eleifend semper. mi egestas. senectus placerat libero eu
                     </div>
-                </dd>
-                <dt>
-                    <span>Ut enim ad minim veniam</span>
-                </dt>
-                <dd>
-                    <div class="card">
-                        <ul>
-                            <li>
-                                Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a,
-                                ultricies in, diam. Sed arcu. Cras consequat.
-                            </li>
-                            <li>
-                                Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
-                                magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
-                                porttitor, facilisis luctus, metus.
-                            </li>
-                            <li>
-                                Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
-                                vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit
-                                amet, nisi.
-                            </li>
-                            <li>
-                                Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut,
-                                elementum vulputate, nunc.
-                            </li>
-                        </ul>
-                    </div>
-                </dd>
-                <dt>
-                    <span>Aliquam tincidunt mauris eu risus.</span>
-                </dt>
-                <dd>
-                    <div class="card">
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                            egestas.
-                        </p>
 
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                            egestas.
-                        </p>
-                        <a href="#" class="more">подробнее...</a>
+                    <a class="page__moreLink" href="#">Read more...</a>
+
+                </div>
+
+                <div class="serviceList__item">
+
+                    <h4 class="serviceList__title">Service 2</h4>
+
+                    <div class="serviceList__text">
+                        Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant netus malesuada
+                        ante. morbi Pellentesque Donec est. amet tristique fames Vestibulum vitae quam et leo. ultricies Mauris sit
+                        ultricies eleifend semper. mi egestas. senectus placerat libero eu
                     </div>
-                </dd>
-                <dt>
-                    <span>Vestibulum auctor dapibus neque.</span>
-                </dt>
-                <dd>
-                    <div class="card">
-                        <p>
-                            Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant
-                            netus malesuada ante. morbi Pellentesque Donec est. amet tristique fames Vestibulum vitae
-                            quam et leo. ultricies Mauris sit ultricies eleifend semper. mi egestas. senectus placerat
-                            libero eu
-                        </p>
-                        <ul>
-                            <li>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            </li>
-                            <li>
-                                Aliquam tincidunt mauris eu risus.
-                            </li>
-                            <li>
-                                Vestibulum auctor dapibus neque.
-                            </li>
-                        </ul>
-                        <p>
-                            Pellentesque et habitant egestas. turpis netus tristique malesuada morbi senectus fames et
-                            ac
-                        </p>
-                        <a href="#" class="more">подробнее...</a>
+
+                    <a class="page__moreLink" href="#">Read more...</a>
+
+                </div>
+
+                <div class="serviceList__item">
+
+                    <h4 class="serviceList__title">Service 3</h4>
+
+                    <div class="serviceList__text">
+                        Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant netus malesuada
+                        ante. morbi Pellentesque Donec est. amet tristique fames Vestibulum vitae quam et leo. ultricies Mauris sit
+                        ultricies eleifend semper. mi egestas. senectus placerat libero eu
                     </div>
-                </dd>
-            </dl>
+
+                    <a class="page__moreLink" href="#">Read more...</a>
+
+                </div>
+
+                <a class="serviceList__allLink">All services</a>
+
+            </div>
         </div>
-        <div id="center">
-            <h4 class="flash">НОВОСТИ</h4>
-            <dl class="news">
-                <dt>
-                    30 Апреля 2009
-                </dt>
-                <dd>
-                    Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem
-                    tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.
-                </dd>
-                <dt>
-                    10 Апреля 2009
-                </dt>
-                <dd>
-                    Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant netus
-                    malesuada ante. morbi Pellentesque Donec est. amet tristique fames Vestibulum vitae quam et leo.
-                    ultricies Mauris sit ultricies eleifend semper. mi egestas. senectus placerat libero eu
-                </dd>
-                <dt>
-                    7 Апреля 2009
-                </dt>
-                <dd>
-                    Pellentesque egestas netus accumsan augue, in eu morbi lacus Mauris vitae leo. quam, vulputate
-                    felis. erat enim sapien eros et sit ullamcorper Praesent amet, fames ac eget fermentum
-                </dd>
-            </dl>
+        <div class="page__col page__col_2">
+            <h3>News</h3>
+
+            <div class="newsList">
+
+                <div class="newsList__item">
+
+                    <h4 class="newsList__title">News title 1</h4>
+
+                    <div class="newsList__date">12.02.2015</div>
+
+                    <div class="newsList__text">
+                        Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant netus malesuada
+                        ante. morbi Pellentesque Donec est. amet tristique fames Vestibulum vitae quam et leo. ultricies Mauris sit
+                        ultricies eleifend semper. mi egestas. senectus placerat libero eu
+                    </div>
+
+                    <a class="page__moreLink" href="#">Read more...</a>
+
+                </div>
+
+                <div class="newsList__item">
+
+                    <h4 class="newsList__title">News title 2</h4>
+
+                    <div class="newsList__date">16.02.2015</div>
+
+                    <div class="newsList__text">
+                        Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant netus malesuada
+                        ante. morbi Pellentesque Donec est. amet tristique fames Vestibulum vitae quam et leo. ultricies Mauris sit
+                        ultricies eleifend semper. mi egestas. senectus placerat libero eu
+                    </div>
+
+                    <a class="page__moreLink" href="#">Read more...</a>
+
+                </div>
+
+                <div class="newsList__item">
+
+                    <h4 class="newsList__title">News title 3</h4>
+
+                    <div class="newsList__date">23.02.2015</div>
+
+                    <div class="newsList__text">
+                        Aenean turpis feugiat tortor vitae, sit amet, ac quam, egestas eget, et tempor habitant netus malesuada
+                        ante. morbi Pellentesque Donec est. amet tristique fames Vestibulum vitae quam et leo. ultricies Mauris sit
+                        ultricies eleifend semper. mi egestas. senectus placerat libero eu
+                    </div>
+
+                    <a class="page__moreLink" href="#">Read more...</a>
+
+                </div>
+
+                <a class="newsList__allLink">All news</a>
+
+            </div>
+
         </div>
-        <div id="right">
-            <h4 class="flash">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
-            <dl class="contacts">
-                <dt>
-                    Телефон:
-                </dt>
-                <dd>
-                    <p class="phone">
-                        (812) 134-2343
-                    </p>
-                </dd>
-                <dt>
-                    Факс:
-                </dt>
-                <dd>
-                    <p class="phone">
-                        (812) 234-1231
-                    </p>
-                </dd>
-                <dt>
-                    Адрес:
-                </dt>
-                <dd>
-                    123123, Санкт-Петербург,
-                    <br/>
-                    Аэродромная ул., д. 18
-                </dd>
-                <dt>
-                    E-mail:
-                </dt>
-                <dd>
-                    <a href="#">some@email.com</a>
-                </dd>
-            </dl>
+        <div class="page__col page__col_3">
+            <h3>Contacts</h3>
+
+            <div class="contacts">
+
+                <div class="contacts__item">
+
+                    <div class="contacts__title">
+                        Phone
+                    </div>
+
+                    <div class="contacts__phone">
+                        (812) 325 23 12
+                    </div>
+
+                </div>
+
+                <div class="contacts__item">
+
+                    <div class="contacts__title">
+                        Address
+                    </div>
+
+                    <div class="contacts__text">
+                        Saint-Petersburg, Lenina st. 25
+                    </div>
+
+                </div>
+
+                <div class="contacts__item">
+
+                    <div class="contacts__title">
+                        Email
+                    </div>
+
+                    <div class="contacts__text">
+                        <a href="#">email@company.com</a>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </div>
     <div class="page__footer">
-        <a class="page__footerLink" href="#">О компании</a>
-        <a class="page__footerLink" href="#">Новости</a>
-        <a class="page__footerLink" href="#">Услуги</a>
-        <a class="page__footerLink" href="#">Проекты</a>
-        <a class="page__footerLink" href="#">Вакансии</a>
-        <a class="page__footerLink" href="#">Контактная информация</a>
+        <a class="page__footerLink" href="#">About us</a>
+        <a class="page__footerLink" href="#">News</a>
+        <a class="page__footerLink" href="#">Services</a>
+        <a class="page__footerLink" href="#">Projects</a>
+        <a class="page__footerLink" href="#">Career</a>
+        <a class="page__footerLink" href="#">Contacts</a>
         <a class="page__logo" href="#"></a>
     </div>
 </div>

@@ -1,0 +1,26 @@
+.newsList {
+
+}
+
+.newsList__item {
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.newsList__title {
+    padding-bottom: 5px;
+    font-size: 17px;
+    color: #466951;
+}
+
+.newsList__text {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.newsList__date {
+    padding-bottom: 10px;
+    font-size: 11px;
+    color: #555;
+}

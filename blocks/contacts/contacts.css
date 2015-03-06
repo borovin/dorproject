@@ -1,0 +1,25 @@
+.contacts {
+
+}
+
+.contacts__item {
+    padding-bottom: 20px;
+}
+
+.contacts__title {
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.contacts__phone {
+    font-size: 28px;
+    padding-bottom: 10px;
+    font-family: kelson;
+    color: #466951;
+}
+
+.contacts__text {
+    font-size: 14px;
+    padding-bottom: 10px;
+}

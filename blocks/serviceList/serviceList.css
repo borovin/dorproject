@@ -1,0 +1,18 @@
+.serviceList {
+
+}
+
+.serviceList__item {
+    padding-bottom: 30px;
+}
+
+.serviceList__title {
+    padding-bottom: 10px;
+    font-size: 17px;
+    color: #466951;
+}
+
+.serviceList__text {
+    font-size: 14px;
+    padding-bottom: 10px;
+}

@@ -1,10 +1,11 @@
 .page {
-
+    box-sizing: border-box;
+    padding-bottom: 70px;
 }
 
 .page__header {
     position: relative;
-    padding: 55px 0 30px;
+    padding: 55px 0 0;
 }
 
 .page__description {
@@ -62,4 +63,47 @@
     position: relative;
     top: 12px;
     right: 40px;
+}
+
+.page__content {
+    padding: 30px 65px;
+    position: relative;
+}
+
+.page__content::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+}
+
+.page__col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 30px;
+    width: 33%;
+}
+
+.page__content .page__col:first-child {
+    padding-left: 0;
+}
+
+.page__content .page__col:last-child {
+    padding-right: 0;
+}
+
+.page__col_1 {
+    width: 50%;
+}
+
+.page__col_2 {
+    width: 25%;
+    background-color: #fafafa;
+    margin: -30px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page__col_3 {
+    width: 25%;
 }
