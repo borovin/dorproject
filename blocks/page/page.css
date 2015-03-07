@@ -1,6 +1,8 @@
 .page {
     box-sizing: border-box;
     padding-bottom: 70px;
+    min-height: 100%;
+    position: relative;
 }
 
 .page__header {
