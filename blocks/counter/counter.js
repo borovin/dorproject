@@ -2,23 +2,38 @@ define(function (require) {
 
     var Block = require('kit/block/block'),
         countIndex = 0,
-        countMax = 0;
+        countMax = 0,
+        countInterval;
 
-    $(document).on('keydown', function(e){
+    function nextStage() {
+        countIndex < countMax && $(document).trigger('changeCount', ++countIndex);
+
+        if (countIndex == countMax) {
+            clearInterval(countInterval);
+        }
+    }
+
+    function prevStage() {
+        countIndex > 0 && $(document).trigger('changeCount', --countIndex);
+    }
+
+    $(document).on('keydown', function (e) {
+
+        clearInterval(countInterval);
 
         switch (e.which) {
             case 37:
-                countIndex > 0 && $(document).trigger('changeCount', --countIndex);
+                prevStage();
                 break;
             case 39:
-                countIndex < countMax && $(document).trigger('changeCount', ++countIndex);
+                nextStage();
                 break;
         }
     });
 
     return Block.extend({
         globalEvents: {
-            'changeCount': function(e, index){
+            'changeCount': function (e, index) {
 
                 var block = this,
                     count = block.el.querySelector('.counter__current'),
@@ -35,6 +50,8 @@ define(function (require) {
         events: {
             'mouseover .counter__link': function (e) {
 
+                clearInterval(countInterval);
+
                 var block = this,
                     $link = $(e.currentTarget),
                     index = block.$('.counter__link').index($link);
@@ -44,12 +61,16 @@ define(function (require) {
                 block.trigger('changeCount', index);
             }
         },
-        render: function(){
+        render: function () {
 
             var block = this,
                 render = Block.prototype.render.apply(block, arguments);
 
             countMax = block.el.querySelectorAll('.counter__link').length - 1;
+
+            countInterval = setInterval(function () {
+                nextStage();
+            }, 3000);
 
             return render;
         }
