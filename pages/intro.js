@@ -4,7 +4,8 @@ define(function (require) {
 
     return Page.extend({
         blocks: {
-            minimap: require('blocks/minimap/minimap')
+            counter: require('blocks/counter/counter'),
+            intro: require('blocks/intro/intro')
         }
     });
 

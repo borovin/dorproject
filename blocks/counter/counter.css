@@ -1,0 +1,84 @@
+.counter {
+    float: left;
+    font-family: kelson;
+    font-size: 80px;
+    color: #fff;
+    background-color: #000;
+    width: 120px;
+    height: 120px;
+    text-align: right;
+    line-height: 118px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.counter__links {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 300px;
+    overflow: hidden;
+}
+
+.counter__link {
+    width: 50px;
+    height: 50px;
+    background-color: #223F2E;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+
+.counter__link::after {
+    content: "";
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 0;
+    height: 0;
+    display: none;
+    border: 5px solid #fff;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.counter__link::before {
+    content: "";
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #71834a, #c6df89);
+}
+
+.counter__link_active::before {
+    display: block;
+}
+
+.counter__link_active::after {
+    display: block;
+}
+
+.counter__link + .counter__link {
+    background-color: #2D4C39;
+}
+
+.counter__link + .counter__link + .counter__link {
+    background-color: #385B44;
+}
+
+.counter__link + .counter__link + .counter__link + .counter__link {
+    background-color: #4C6950;
+}
+
+.counter__link + .counter__link + .counter__link + .counter__link + .counter__link {
+    background-color: #6C886E;
+}
+
+.counter__link + .counter__link + .counter__link + .counter__link + .counter__link + .counter__link {
+    background-color: #819d83;
+}
+
+.page__footer .counter {
+    margin: -50px 0 0 -65px;
+}

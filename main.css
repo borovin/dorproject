@@ -7,6 +7,8 @@
 @import "blocks/serviceList/serviceList.css";
 @import "blocks/newsList/newsList.css";
 @import "blocks/contacts/contacts.css";
+@import "blocks/counter/counter.css";
+@import "blocks/intro/intro.css";
 
 /*
  общие правила

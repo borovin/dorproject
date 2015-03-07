@@ -4,6 +4,12 @@
     right: 40px;
     top: 50px;
     white-space: nowrap;
+    z-index: 100;
+}
+
+.lang_left {
+    left: 40px;
+    right: auto;
 }
 
 .lang__link {
@@ -13,12 +19,12 @@
     text-decoration: underline;
     display: inline-block;
     height: 26px;
-    line-height: 26px;
+    line-height: 25px;
     padding: 0 8px;
 }
 
 .lang__link_active {
     color: #fff;
-    background-color: #466951;
+    background: linear-gradient(180deg, #5d8b6d, #466951);
     text-decoration: none;
 }

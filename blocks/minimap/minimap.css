@@ -24,8 +24,8 @@
     width: 700px;
     height: 528px;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: -160px;
+    top: -55px;
 }
 
 .minimap__link {

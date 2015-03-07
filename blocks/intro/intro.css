@@ -1,0 +1,115 @@
+.intro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.intro__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.intro__content_visible {
+    opacity: 1;
+}
+
+.intro__content_visible + .intro__content_visible ~ .intro__link {
+    opacity: 1;
+    display: block;
+}
+
+.intro__title {
+    font-family: kelson;
+    font-size: 80px;
+    position: absolute;
+    left: 120px;
+    bottom: 200px;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.intro__subTitle {
+    font-size: 14px;
+    padding-top: 30px;
+    text-transform: none;
+    line-height: normal;
+}
+
+.intro__link {
+    position: absolute;
+    height: 50px;
+    line-height: 49px;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0 0 8px #333;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    font-family: kelson;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    opacity: 0;
+    display: none;
+}
+
+.intro__link:hover {
+    text-decoration: underline;
+}
+
+.intro__link::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 28px;
+    height: 28px;
+    border: 8px solid #fff;
+    box-shadow: 0 0 8px #333;
+    border-radius: 100%;
+    left: -40px;
+    top: -40px;
+}
+
+.intro__link:hover::before {
+    background-color: #466951;
+}
+
+.intro__link::after {
+    content: "";
+    width: 6px;
+    height: 20px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -4px;
+    top: -10px;
+}
+
+.intro__link_news {
+    top: 70%;
+    left: 70%;
+}
+
+.intro__link_projects {
+    left: 80%;
+    top: 50%;
+}
+
+.intro__link_about {
+    top: 20%;
+    left: 30%;
+}
+
+.intro__link_contacts {
+    top: 50%;
+    left: 35%;
+}
+
+.intro__link_services {
+    top: 30%;
+    left: 60%;
+}
