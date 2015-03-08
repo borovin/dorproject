@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дорпроект</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body id="page" class="page" data-page="pages/intro">
+<div class="lang lang_left">
+    <a href="#" class="lang__link">РУС</a>
+    <a href="#" class="lang__link lang__link_active">ENG</a>
+</div>
+<div class="intro" block="intro">
+
+    <div class="intro__content intro__content_visible">
+        <div class="intro__title">
+            We start<br/>from scratch
+            <div class="intro__subTitle">Move your mouse over squares to see all stages.<br/>(or use left/right keys)
+            </div>
+        </div>
+    </div>
+
+    <div class="intro__content"
+         style="background-image: url('blocks/intro/step1.jpg')"></div>
+
+    <div class="intro__content"
+         style="background-image: url('blocks/intro/step2.jpg')"></div>
+
+    <div class="intro__content"
+         style="background-image: url('blocks/intro/step3.jpg')"></div>
+
+    <div class="intro__content"
+         style="background-image: url('blocks/intro/step4.jpg')"></div>
+
+    <div class="intro__content"
+         style="background-image: url('blocks/intro/step5.jpg')"></div>
+
+    <a href="main.html" class="intro__link intro__link_news">News</a>
+    <a href="main.html" class="intro__link intro__link_about">About</a>
+    <a href="main.html" class="intro__link intro__link_services">Services</a>
+    <a href="main.html" class="intro__link intro__link_projects">Projects</a>
+    <a href="main.html" class="intro__link intro__link_contacts">Contacts</a>
+
+</div>
+<div class="page__footer">
+
+    <div class="counter" block="counter">
+        <div class="counter__current">
+            0
+        </div>
+        <div class="counter__links">
+            <a class="counter__link counter__link_active"></a>
+            <a class="counter__link"></a>
+            <a class="counter__link"></a>
+            <a class="counter__link"></a>
+            <a class="counter__link"></a>
+            <a class="counter__link"></a>
+        </div>
+    </div>
+
+    <a class="page__footerLink" href="#">About us</a>
+    <a class="page__footerLink" href="#">News</a>
+    <a class="page__footerLink" href="#">Services</a>
+    <a class="page__footerLink" href="#">Projects</a>
+    <a class="page__footerLink" href="#">Career</a>
+    <a class="page__footerLink" href="#">Contacts</a>
+    <a class="page__logo" href="#"></a>
+</div>
+
+
+<script src="bower_components/requirejs/require.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="require.config.js"></script>
+
+<script>
+    require(['main']);
+</script>
+
+</body>
+</html>
