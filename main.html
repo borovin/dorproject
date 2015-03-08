@@ -215,15 +215,10 @@
 
 <script src="bower_components/requirejs/require.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="require.config.js"></script>
 
 <script>
-    require({
-        map: {
-            "*": {
-                underscore: 'bower_components/lodash/lodash'
-            }
-        }
-    }, ['main']);
+    require(['main']);
 </script>
 
 </body>
