@@ -1,12 +1,12 @@
 ({
-    baseUrl: '../',
+    baseUrl: '../src/',
+
+    mainConfigFile: '../src/require.config.js',
+    dir: "../build",
 
     paths: {
         'jquery': 'bower_components/jquery/dist/jquery'
     },
-
-    mainConfigFile: '../require.config.js',
-    dir: "../build",
 
     skipDirOptimize: true,
     optimizeAllPluginResources: true,
