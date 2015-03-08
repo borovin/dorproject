@@ -1,6 +1,4 @@
-requirejs.config({});
-
-define(function (require) {
+define(function () {
 
     var page = document.body.dataset.page;
 
