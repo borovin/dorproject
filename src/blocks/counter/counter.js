@@ -1,64 +1,38 @@
 define(function (require) {
 
-    var Block = require('kit/block/block'),
-        countIndex = 0,
-        countMax = 0,
-        countInterval;
-
-    function nextStage() {
-        countIndex < countMax && $(document).trigger('changeCount', ++countIndex);
-
-        if (countIndex == countMax) {
-            clearInterval(countInterval);
-        }
-    }
-
-    function prevStage() {
-        countIndex > 0 && $(document).trigger('changeCount', --countIndex);
-    }
-
-    $(document).on('keydown', function (e) {
-
-        clearInterval(countInterval);
-
-        switch (e.which) {
-            case 37:
-                prevStage();
-                break;
-            case 39:
-                nextStage();
-                break;
-        }
-    });
+    var Block = require('kit/block/block');
 
     return Block.extend({
+        countIndex: 0,
+        countMax: 0,
+        countInterval: null,
         globalEvents: {
-            'changeCount': function (e, index) {
+            'keydown': function (e) {
 
-                var block = this,
-                    count = block.el.querySelector('.counter__current'),
-                    $link = block.$('.counter__link:eq(' + index + ')');
+                var block = this;
 
-                $link
-                    .addClass('counter__link_active')
-                    .siblings('.counter__link')
-                    .removeClass('counter__link_active');
+                clearInterval(block.countInterval);
 
-                count.innerHTML = index;
+                switch (e.which) {
+                    case 37:
+                        block.prev();
+                        break;
+                    case 39:
+                        block.next();
+                        break;
+                }
             }
         },
         events: {
             'mouseover .counter__link': function (e) {
 
-                clearInterval(countInterval);
-
                 var block = this,
                     $link = $(e.currentTarget),
                     index = block.$('.counter__link').index($link);
 
-                countIndex = index;
+                clearInterval(block.countInterval);
 
-                block.trigger('changeCount', index);
+                block.changeTo(index);
             }
         },
         render: function () {
@@ -66,13 +40,49 @@ define(function (require) {
             var block = this,
                 render = Block.prototype.render.apply(block, arguments);
 
-            countMax = block.el.querySelectorAll('.counter__link').length - 1;
+            block.countMax = block.el.querySelectorAll('.counter__link').length - 1;
+            block.currentEl = block.el.querySelector('.counter__current');
 
-            countInterval = setInterval(function () {
-                nextStage();
+            block.countInterval = setInterval(function () {
+                block.next();
             }, 3000);
 
             return render;
+        },
+        changeTo: function (index) {
+
+            var block = this;
+
+            if (index >= 0 && index <= block.countMax) {
+                block.countIndex = index;
+                block.trigger('changeCount', block.countIndex);
+            } else {
+                return;
+            }
+
+            if (block.countInterval && block.countIndex == block.countMax) {
+                clearInterval(block.countInterval);
+            }
+
+            block.$('.counter__link:eq(' + block.countIndex + ')')
+                .addClass('counter__link_active')
+                .siblings('.counter__link')
+                .removeClass('counter__link_active');
+
+            block.currentEl.innerHTML = block.countIndex;
+
+        },
+        prev: function () {
+
+            var block = this;
+
+            block.changeTo(block.countIndex - 1);
+        },
+        next: function () {
+
+            var block = this;
+
+            block.changeTo(block.countIndex + 1);
         }
     });
 });
