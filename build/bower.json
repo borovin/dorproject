@@ -1,0 +1,25 @@
+{
+  "name": "dorproject",
+  "version": "0.0.0",
+  "homepage": "http://borovin.github.io/dorproject/build/",
+  "authors": [
+    "Andrew Borovin <a@borovin.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "lodash": "^3.5.0"
+  },
+  "dependencies": {
+    "requirejs": "^2.1.16",
+    "block": "https://github.com/borovin/block.git#dev",
+    "jquery": "^2.1.3"
+  }
+}
