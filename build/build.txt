@@ -35,12 +35,17 @@ blocks/serviceList/serviceList.css
 ----------------
 blocks/serviceList/serviceList.css
 
+common.css
+----------------
+common.css
+
 kit/fonts/kelson/kelson.css
 ----------------
 kit/fonts/kelson/kelson.css
 
 main.css
 ----------------
+common.css
 kit/fonts/kelson/kelson.css
 blocks/page/page.css
 blocks/footer/footer.css
