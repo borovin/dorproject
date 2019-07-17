@@ -1,0 +1,33 @@
+{
+  "name": "dorproject",
+  "version": "1.0.0",
+  "description": "portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borovin/dorproject.git"
+  },
+  "author": "a@borovin.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borovin/dorproject/issues"
+  },
+  "homepage": "https://github.com/borovin/dorproject#readme",
+  "dependencies": {
+    "next": "^9.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2"
+  }
+}
