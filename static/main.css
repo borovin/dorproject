@@ -48,6 +48,7 @@ body, html, #__next {
   float: right;
   height: 40px;
   margin: 70px 10px 0 0;
+  opacity: 0.8;
 }
 
 .counter__link {
@@ -80,11 +81,11 @@ body, html, #__next {
   background: linear-gradient(45deg, #71834a, #c6df89);
 }
 
-.counter__link_active::before {
+.counter__link_active_true::before {
   display: block;
 }
 
-.counter__link_active::after {
+.counter__link_active_true::after {
   display: block;
 }
 
@@ -117,5 +118,55 @@ body, html, #__next {
   object-fit: none;
   width: 100%;
   height: 100%;
-  position: absolute
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+}
+
+.stepImage_visible_true {
+  opacity: 1;
+}
+
+.intro__title {
+  font-family: Oswald;
+  font-size: 80px;
+  position: absolute;
+  left: 120px;
+  bottom: 200px;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.intro__subTitle {
+  font-size: 14px;
+  padding-top: 30px;
+  text-transform: none;
+  line-height: normal;
+}
+
+.languageSelector {
+    height: 26px;
+    position: absolute;
+    right: 40px;
+    top: 50px;
+    white-space: nowrap;
+    z-index: 100;
+    font-family: Oswald;
+}
+
+.languageSelector__link {
+    color: #466951;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: inline-block;
+    height: 26px;
+    line-height: 25px;
+    padding: 0 8px;
+}
+
+.languageSelector__link_active_true {
+  color: #fff;
+  background: linear-gradient(180deg,#5d8b6d,#466951);
+  text-decoration: none;
 }
