@@ -1,3 +1,121 @@
-h1 {
-  color: red
+body, html, #__next {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.counter {
+  float: left;
+  font-family: Oswald;
+  font-size: 94px;
+  color: #fff;
+  background-color: #000;
+  width: 120px;
+  height: 120px;
+  text-align: right;
+  line-height: 118px;
+  padding: 0 25px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.counter__links {
+  height: 60px;
+}
+
+.navigation {
+  height: 60px;
+  background-color: #000;
+  font-family: Oswald;
+  line-height: 60px
+}
+
+.navigation__link {
+  color: #fff;
+  margin-right: 20px;
+}
+
+.logo {
+  float: right;
+  height: 40px;
+  margin: 70px 10px 0 0;
+}
+
+.counter__link {
+  width: 60px;
+  height: 60px;
+  background-color: #223F2E;
+  float: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.counter__link::after {
+  content: "";
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 0;
+  height: 0;
+  display: none;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.counter__link::before {
+  content: "";
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #71834a, #c6df89);
+}
+
+.counter__link_active::before {
+  display: block;
+}
+
+.counter__link_active::after {
+  display: block;
+}
+
+.counter__link + .counter__link {
+  background-color: #2D4C39;
+}
+
+.counter__link + .counter__link + .counter__link {
+  background-color: #385B44;
+}
+
+.counter__link + .counter__link + .counter__link + .counter__link {
+  background-color: #4C6950;
+}
+
+.counter__link + .counter__link + .counter__link + .counter__link + .counter__link {
+  background-color: #6C886E;
+}
+
+.counter__link + .counter__link + .counter__link + .counter__link + .counter__link + .counter__link {
+  background-color: #819d83;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.stepImage {
+  object-fit: none;
+  width: 100%;
+  height: 100%;
+  position: absolute
 }

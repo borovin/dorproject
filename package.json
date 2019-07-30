@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint --ext .js --ext .jsx ."
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/borovin/dorproject#readme",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "next": "^9.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
